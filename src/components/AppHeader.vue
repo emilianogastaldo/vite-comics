@@ -78,8 +78,15 @@ header {
     background-color: #FFFFFF;
     margin-top: 1rem;
     padding: 1rem 0;
+    height: 100px;
 
 }
+
+figure {
+    width: 70px;
+}
+
+
 
 .container {
     max-width: 1200px;
@@ -92,8 +99,19 @@ header {
     align-items: center;
 }
 
-ul li a {
+ul {
+    gap: 2rem;
+}
 
-    padding: 1rem
+ul li a {
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #484848;
+    flex-shrink: 1;
+}
+
+ul li a:hover {
+    color: #0282F9;
+    border-bottom: 4px solid #0282F9;
 }
 </style>
