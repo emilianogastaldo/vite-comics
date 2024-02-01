@@ -1,6 +1,21 @@
+
 <script>
+import AppHeader from './components/AppHeader.vue';
+export default {
+    name: 'App',
+    components: {
+        AppHeader
+    }
+}
 </script>
+ 
+<template>
+    <AppHeader />
+    <h1>prova</h1>
+</template>
 
-<template></template>
-
-<style></style>
+<style>
+h1 {
+    color: red;
+}
+</style>
