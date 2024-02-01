@@ -76,7 +76,6 @@ export default {
 <style scoped>
 header {
     background-color: #FFFFFF;
-    margin-top: 1rem;
     height: 100px;
     display: flex;
     justify-content: center;

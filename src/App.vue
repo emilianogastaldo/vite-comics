@@ -28,6 +28,7 @@ export default {
 }
 
 body {
+    padding: 1rem 0;
     background-color: black;
     font-family: 'Roboto Condensed', sans-serif;
 }
