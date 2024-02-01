@@ -24,9 +24,4 @@ main {
 section {
     line-height: 100px;
 }
-
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
 </style>

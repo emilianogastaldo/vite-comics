@@ -97,10 +97,6 @@ footer {
     padding: 2rem 0;
 }
 
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .row {
     display: flex;

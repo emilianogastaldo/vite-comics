@@ -87,13 +87,6 @@ figure {
     width: 70px;
 }
 
-
-
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .flex {
     display: flex;
     justify-content: space-between;
