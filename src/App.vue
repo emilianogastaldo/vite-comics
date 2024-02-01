@@ -39,4 +39,8 @@ a {
 ul {
     list-style-type: none;
 }
+
+img {
+    max-width: 100%;
+}
 </style>
