@@ -55,23 +55,21 @@ export default {
             </div>
         </section>
         <section id="footer-bottom">
-            <div class="wrapper">
-                <nav>
-                    <div id="footer-bottom-nav-left">
-                        <a href="#">SIGN-UP NOW!</a>
-                    </div>
-                    <div id="footer-bottom-nav-right">
-                        <ul>
-                            <li><a href="#">FOLLOW US</a></li>
-                            <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
-                            <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                            <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
-                            <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
-                            <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="wrapper">
+                <div id="footer-bottom-nav-left">
+                    <a href="#" class="button">SIGN-UP NOW!</a>
+                </div>
+                <div id="footer-bottom-nav-right">
+                    <ul>
+                        <li><a href="#" class="follow-btn">FOLLOW US</a></li>
+                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
         </section>
 
     </footer>
@@ -124,5 +122,30 @@ footer {
     color: #818181;
     text-transform: capitalize;
     font-size: small;
+}
+
+#footer-bottom nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-bottom-nav-right ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.button {
+    border: 2px solid #0282F9;
+    padding: 13px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.follow-btn {
+    color: #0282F9;
+    font-size: 1.4rem;
 }
 </style>
