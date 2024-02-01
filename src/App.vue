@@ -20,28 +20,6 @@ export default {
     <AppFooter />
 </template>
 
-<style>
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    padding: 1rem 0;
-    background-color: black;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-img {
-    max-width: 100%;
-}
+<style lang="scss">
+@use 'assets/scss/style.scss';
 </style>
