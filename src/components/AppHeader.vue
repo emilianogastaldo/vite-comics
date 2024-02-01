@@ -66,7 +66,7 @@ export default {
             </figure>
             <nav>
                 <ul class="flex">
-                    <li v-for="link in links"><a :href="link.url">{{ link.text }}</a></li>
+                    <li v-for="link in links"><a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a></li>
                 </ul>
             </nav>
         </div>
@@ -110,9 +110,9 @@ ul li a {
     padding: 36px 0;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a.active {
     color: #0282F9;
     border-bottom: 5px solid #0282F9;
-
 }
 </style>
