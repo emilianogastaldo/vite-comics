@@ -92,6 +92,7 @@ figure {
 
 .wrapper {
     width: 1200px;
+    margin: 0 auto;
 }
 
 .flex {
