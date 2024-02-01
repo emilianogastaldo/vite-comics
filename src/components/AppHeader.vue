@@ -87,12 +87,6 @@ figure {
     width: 70px;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 ul {
     gap: 2rem;
 }

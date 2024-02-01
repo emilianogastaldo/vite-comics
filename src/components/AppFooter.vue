@@ -55,7 +55,7 @@ export default {
             </div>
         </section>
         <section id="footer-bottom">
-            <nav class="wrapper">
+            <nav class="wrapper flex">
                 <div id="footer-bottom-nav-left">
                     <a href="#" class="button">SIGN-UP NOW!</a>
                 </div>
@@ -124,11 +124,6 @@ footer {
     color: white;
 }
 
-#footer-bottom nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 #footer-bottom-nav-right ul {
     display: flex;
