@@ -60,9 +60,9 @@ export default {
 
 <template >
     <header>
-        <div class="container flex">
+        <div class="wrapper flex">
             <figure>
-                <img src="../assets/img/dc-logo.png" alt="">
+                <a href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
             </figure>
             <nav>
                 <ul class="flex">
@@ -77,9 +77,11 @@ export default {
 header {
     background-color: #FFFFFF;
     margin-top: 1rem;
-    padding: 1rem 0;
     height: 100px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
 }
 
 figure {
@@ -88,9 +90,8 @@ figure {
 
 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.wrapper {
+    width: 1200px;
 }
 
 .flex {
@@ -105,13 +106,13 @@ ul {
 
 ul li a {
     text-transform: uppercase;
-    padding: 1rem 0;
     color: #484848;
-    flex-shrink: 1;
+    padding: 36px 0;
 }
 
 ul li a:hover {
     color: #0282F9;
-    border-bottom: 4px solid #0282F9;
+    border-bottom: 5px solid #0282F9;
+
 }
 </style>
