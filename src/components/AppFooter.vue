@@ -55,7 +55,23 @@ export default {
             </div>
         </section>
         <section id="footer-bottom">
-            <div class="wrapper"></div>
+            <div class="wrapper">
+                <nav>
+                    <div id="footer-bottom-nav-left">
+                        <a href="#">SIGN-UP NOW!</a>
+                    </div>
+                    <div id="footer-bottom-nav-right">
+                        <ul>
+                            <li><a href="#">FOLLOW US</a></li>
+                            <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </section>
 
     </footer>
