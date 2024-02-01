@@ -124,6 +124,10 @@ footer {
     font-size: small;
 }
 
+.row .col ul li a:hover {
+    color: white;
+}
+
 #footer-bottom nav {
     display: flex;
     justify-content: space-between;
