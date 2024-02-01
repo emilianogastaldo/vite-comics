@@ -33,18 +33,23 @@ export default {
                         <li><a href="#">privacy policy (new)</a></li>
                         <li><a href="#">Ad choices</a></li>
                         <li><a href="#">Advertising</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#">shop DC Collectibles</a></li>
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">talent workshop</a></li>
+                        <li><a href="#">CPSC certificates</a></li>
+                        <li><a href="#">Ratings</a></li>
+                        <li><a href="#">shop help</a></li>
+                        <li><a href="#">contact us</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4>sites</h4>
                     <ul>
-                        <li><a href="#">provafe</a></li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">MAD magazine</a></li>
+                        <li><a href="#">DC Kids</a></li>
+                        <li><a href="#">DC universe</a></li>
+                        <li><a href="#">DC power visa</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,6 +96,7 @@ footer {
 .row .col h4 {
     text-transform: uppercase;
     font-size: larger;
+    font-weight: 500;
 }
 
 .row .col ul {
@@ -98,7 +104,9 @@ footer {
 }
 
 .row .col ul li a {
+    font-family: 'Open Sans', sans-serif;
     color: #818181;
     text-transform: capitalize;
+    font-size: small;
 }
 </style>
