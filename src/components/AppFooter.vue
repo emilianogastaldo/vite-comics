@@ -1,19 +1,9 @@
 <script>
 export default {
     name: 'AppFooter',
-    // data: () => ({
-    //     menus: [
-    //         {
-    //             title: 'dc comics',
-    //             links: [
-    //                 {
-    //                     text: 'characters',
-    //                     href: '#'
-    //                 }
-    //             ]
-    //         }
-    //     ],
-    // }),
+    props: {
+        menus: Array,
+    }
 }
 </script>
 
@@ -32,6 +22,9 @@ export default {
                         <li><a href="#">Videos</a></li>
                         <li><a href="#">News</a></li>
                     </ul>
+                </div>
+                <div class="col">
+
                     <h4>shop</h4>
                     <ul>
                         <li><a href="#">shop DC</a></li>
@@ -100,10 +93,15 @@ footer {
     background-repeat: no-repeat;
     background-position: right;
     padding: 2rem 0;
+    height: 400px;
 
     .row {
         display: flex;
+        height: 100%;
         gap: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: start;
 
         .col h4 {
             text-transform: uppercase;
