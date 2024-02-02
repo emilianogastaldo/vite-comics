@@ -6,7 +6,6 @@ export default {
 
 <template>
     <footer>
-
         <section id="footer-top" class="wrapper">
             <div class="row">
                 <div class="col">
@@ -71,13 +70,11 @@ export default {
                 </div>
             </nav>
         </section>
-
     </footer>
 </template>
 
 <style lang="scss" scoped>
 footer {
-
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +125,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-
 
     .follow-btn {
         color: #0282F9;
