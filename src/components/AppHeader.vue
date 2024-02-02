@@ -73,7 +73,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     background-color: #FFFFFF;
     height: 100px;
@@ -89,17 +89,17 @@ figure {
 
 ul {
     gap: 2rem;
-}
 
-ul li a {
-    text-transform: uppercase;
-    color: #484848;
-    padding: 36px 0;
-}
+    li a {
+        text-transform: uppercase;
+        color: #484848;
+        padding: 36px 0;
 
-ul li a:hover,
-ul li a.active {
-    color: #0282F9;
-    border-bottom: 5px solid #0282F9;
+        &:hover,
+        &.active {
+            color: #0282F9;
+            border-bottom: 5px solid #0282F9;
+        }
+    }
 }
 </style>
