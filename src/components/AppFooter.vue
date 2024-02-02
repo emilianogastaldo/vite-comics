@@ -75,7 +75,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
 
     background-image: url('../assets/img/footer-bg.jpg');
@@ -85,62 +85,54 @@ footer {
     color: white
 }
 
-#footer-top {
-    background-image: url('../assets/img/dc-logo-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 2rem 0;
-}
-
 #footer-bottom {
     background-color: #303030;
     padding: 2rem 0;
 }
 
+#footer-top {
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 2rem 0;
 
-.row {
-    display: flex;
-    gap: 1rem;
+    .row {
+        display: flex;
+        gap: 1rem;
+
+        .col h4 {
+            text-transform: uppercase;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .col ul {
+            margin: 1rem 0;
+
+            li a {
+                font-family: 'Open Sans', sans-serif;
+                color: #818181;
+                text-transform: capitalize;
+                font-size: small;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+        }
+    }
 }
-
-.row .col h4 {
-    text-transform: uppercase;
-    font-size: larger;
-    font-weight: 500;
-}
-
-.row .col ul {
-    margin: 1rem 0;
-}
-
-.row .col ul li a {
-    font-family: 'Open Sans', sans-serif;
-    color: #818181;
-    text-transform: capitalize;
-    font-size: small;
-}
-
-.row .col ul li a:hover {
-    color: white;
-}
-
 
 #footer-bottom-nav-right ul {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-}
 
-.button {
-    border: 2px solid #0282F9;
-    padding: 13px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
 
-}
-
-.follow-btn {
-    color: #0282F9;
-    font-size: 1.4rem;
+    .follow-btn {
+        color: #0282F9;
+        font-size: 1.4rem;
+    }
 }
 </style>
