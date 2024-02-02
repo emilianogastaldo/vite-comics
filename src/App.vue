@@ -3,6 +3,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppBlueSection from './components/AppBlueSection.vue';
 
 export default {
     name: 'App',
@@ -10,6 +11,7 @@ export default {
         AppHeader,
         AppMain,
         AppFooter,
+        AppBlueSection,
     }
 }
 </script>
@@ -17,6 +19,7 @@ export default {
 <template>
     <AppHeader />
     <AppMain />
+    <AppBlueSection />
     <AppFooter />
 </template>
 
