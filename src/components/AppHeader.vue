@@ -81,27 +81,27 @@ header {
     justify-content: center;
     align-items: center;
     flex-basis: 100%;
+
+    ul {
+        gap: 2rem;
+
+        li a {
+            text-transform: uppercase;
+            color: #484848;
+            padding: 36px 0;
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            &:hover,
+            &.active {
+                color: #0282F9;
+                border-bottom: 5px solid #0282F9;
+            }
+        }
+    }
 }
 
 figure {
-    width: 70px;
-}
-
-ul {
-    gap: 2rem;
-
-    li a {
-        text-transform: uppercase;
-        color: #484848;
-        padding: 36px 0;
-        font-size: 0.8rem;
-        font-weight: 700;
-
-        &:hover,
-        &.active {
-            color: #0282F9;
-            border-bottom: 5px solid #0282F9;
-        }
-    }
+    height: 70px;
 }
 </style>
