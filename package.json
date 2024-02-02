@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/open-sans": "^5.0.23",
+    "@fontsource/roboto-condensed": "^5.0.14",
     "vue": "^3.3.11"
   },
   "devDependencies": {

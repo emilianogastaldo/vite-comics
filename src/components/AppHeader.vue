@@ -94,6 +94,8 @@ ul {
         text-transform: uppercase;
         color: #484848;
         padding: 36px 0;
+        font-size: 0.8rem;
+        font-weight: 700;
 
         &:hover,
         &.active {

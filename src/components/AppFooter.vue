@@ -100,7 +100,6 @@ footer {
         .col h4 {
             text-transform: uppercase;
             font-size: larger;
-            font-weight: 500;
         }
 
         .col ul {
@@ -111,6 +110,7 @@ footer {
                 color: #818181;
                 text-transform: capitalize;
                 font-size: small;
+                line-height: 1.3rem;
 
                 &:hover {
                     color: white;
