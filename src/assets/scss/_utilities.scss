@@ -1,0 +1,20 @@
+// Utilities CSS
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    border: 2px solid #0282F9;
+    padding: 13px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
