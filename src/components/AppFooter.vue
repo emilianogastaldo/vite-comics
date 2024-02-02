@@ -1,6 +1,19 @@
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    // data: () => ({
+    //     menus: [
+    //         {
+    //             title: 'dc comics',
+    //             links: [
+    //                 {
+    //                     text: 'characters',
+    //                     href: '#'
+    //                 }
+    //             ]
+    //         }
+    //     ],
+    // }),
 }
 </script>
 
