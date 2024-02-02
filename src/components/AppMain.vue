@@ -96,7 +96,7 @@ export default {
     <main>
         <section class="jumbotron">
         </section>
-        <section class="wrapper flex flex-column">
+        <section class="wrapper flex flex-column position-relative">
             <div class="row">
                 <div v-for="(comic, i) in comics" :key="i" class="card">
                     <div class="card-img" :style="{ 'background-image': 'url(' + comic.thumb + ')' }">
@@ -107,6 +107,7 @@ export default {
                 </div>
             </div>
             <a href="" class="btn btn-more">LOAD MORE</a>
+            <div class="btn btn-label"> CURRENT SERIES</div>
         </section>
     </main>
 </template>
@@ -125,6 +126,15 @@ main {
     }
 }
 
+.btn-label {
+    font-size: 2rem;
+    padding: .5rem 2.5rem;
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    translate: 0 -50%;
+}
+
 .btn-more {
     font-size: small;
     padding: 10px 50px;
@@ -135,7 +145,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1rem;
-    padding: 4rem 0;
+    padding: 3rem 0;
 
     .card {
         flex-basis: calc(100%/6);
@@ -160,6 +170,7 @@ main {
         }
 
         .card-text {
+            font-family: 'Open Sans', sans-serif;
             text-transform: uppercase;
         }
     }
