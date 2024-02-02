@@ -61,11 +61,11 @@ export default {
                 <div id="footer-bottom-nav-right">
                     <ul>
                         <li><a href="#" class="follow-btn">FOLLOW US</a></li>
-                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer_images/footer-facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer_images/footer-twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer_images/footer-youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer_images/footer-pinterest.png" alt=""></a></li>
+                        <li><a href="#"><img src="../assets/img/footer_images/footer-periscope.png" alt=""></a></li>
                     </ul>
                 </div>
             </nav>
@@ -75,7 +75,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    background-image: url('../assets/img/footer-bg.jpg');
+    background-image: url('../assets/img/footer_images/footer-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@ footer {
 }
 
 #footer-top {
-    background-image: url('../assets/img/dc-logo-bg.png');
+    background-image: url('../assets/img/logos/dc-logo-bg.png');
     background-repeat: no-repeat;
     background-position: right;
     padding: 2rem 0;

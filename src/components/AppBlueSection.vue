@@ -32,7 +32,7 @@ export default {
     }),
     methods: {
         imgUrl(subString) {
-            return new URL(`../assets/img/${subString}`, import.meta.url).href
+            return new URL(`../assets/img/section_blue_icons/${subString}`, import.meta.url).href
         }
     }
 }

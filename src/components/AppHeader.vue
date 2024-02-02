@@ -62,7 +62,7 @@ export default {
     <header>
         <div class="wrapper flex">
             <figure>
-                <a href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
+                <a href="#"><img src="../assets/img/logos/dc-logo.png" alt=""></a>
             </figure>
             <nav>
                 <ul class="flex">
