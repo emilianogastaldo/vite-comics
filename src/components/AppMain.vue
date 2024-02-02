@@ -96,7 +96,7 @@ export default {
     <main>
         <section class="jumbotron">
         </section>
-        <section class="wrapper">
+        <section class="wrapper flex flex-column">
             <div class="row">
                 <div v-for="(comic, i) in comics" :key="i" class="card">
                     <div class="card-img" :style="{ 'background-image': 'url(' + comic.thumb + ')' }">
@@ -106,12 +106,14 @@ export default {
                     </div>
                 </div>
             </div>
+            <a href="" class="btn btn-more">LOAD MORE</a>
         </section>
     </main>
 </template>
 
 <style lang="scss" scoped>
 main {
+    padding-bottom: 2rem;
     background-color: #1C1C1C;
     color: white;
 
@@ -121,6 +123,12 @@ main {
         background-repeat: no-repeat;
         background-position: top;
     }
+}
+
+.btn-more {
+    font-size: small;
+    padding: 10px 50px;
+
 }
 
 .row {
