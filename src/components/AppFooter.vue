@@ -69,7 +69,7 @@ export default {
         <section id="footer-bottom">
             <nav class="wrapper flex">
                 <div id="footer-bottom-nav-left">
-                    <a href="#" class="button">SIGN-UP NOW!</a>
+                    <a href="#" class="btn btn-signup">SIGN-UP NOW!</a>
                 </div>
                 <div id="footer-bottom-nav-right">
                     <ul>
@@ -93,11 +93,6 @@ footer {
     background-position: center;
     background-size: cover;
     color: white
-}
-
-#footer-bottom {
-    background-color: #303030;
-    padding: 2rem 0;
 }
 
 #footer-top {
@@ -134,6 +129,17 @@ footer {
     }
 }
 
+#footer-bottom {
+    background-color: #303030;
+    padding: 2rem 0;
+}
+
+.btn-signup {
+    padding: 13px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+}
+
 #footer-bottom-nav-right ul {
     display: flex;
     align-items: center;
@@ -143,5 +149,6 @@ footer {
         color: #0282F9;
         font-size: 1.4rem;
     }
+
 }
 </style>

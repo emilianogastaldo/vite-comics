@@ -77,10 +77,7 @@ export default {
 header {
     background-color: #FFFFFF;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
+    line-height: 100px;
 
     ul {
         gap: 2rem;
@@ -88,7 +85,7 @@ header {
         li a {
             text-transform: uppercase;
             color: #484848;
-            padding: 36px 0;
+            padding: 37px 0;
             font-size: 0.8rem;
             font-weight: 700;
 
