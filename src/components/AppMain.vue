@@ -97,7 +97,61 @@ export default {
         <section class="jumbotron">
         </section>
         <section class="wrapper">
-            .row
+            <div class="row">
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src='https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+                            alt="">
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src='https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+                            alt="">
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src='https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+                            alt="">
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src='https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+                            alt="">
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src='https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+                            alt="">
+                    </div>
+                    <div class="card-text">
+                        comic book
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -112,6 +166,41 @@ main {
         background-image: url("../assets/img/jumbotron.jpg");
         background-repeat: no-repeat;
         background-position: top;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+    padding: 4rem 0;
+
+    .card {
+        flex-basis: calc(100%/6);
+        padding: 0 1rem;
+        cursor: pointer;
+
+        .card-img {
+            display: block;
+            aspect-ratio: 1/1;
+            background-image: url('https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY');
+            background-size: 150%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card-text {
+            margin: .5rem 0;
+            text-transform: uppercase;
+        }
     }
 }
 </style>
