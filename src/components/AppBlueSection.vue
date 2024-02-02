@@ -29,7 +29,12 @@ export default {
                 url: '#'
             },
         ]
-    })
+    }),
+    methods: {
+        imgUrl(subString) {
+            return new URL(`../assets/img/${subString}`, import.meta.url).href
+        }
+    }
 }
 </script>
 
@@ -38,7 +43,7 @@ export default {
         <ul class="wrapper flex space-around">
             <li v-for="item in buyList">
                 <a href="#">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    <img :src="imgUrl(item.img)" alt="img">
                     {{ item.text }}
                 </a>
             </li>
@@ -54,7 +59,6 @@ section {
 }
 
 a {
-    height: 70px;
     font-family: "Open Sans", sans-serif;
     color: white;
     text-transform: uppercase;
@@ -62,5 +66,9 @@ a {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    img {
+        width: 50px;
+    }
 }
 </style>
