@@ -6,9 +6,13 @@ export default {
 
 <template>
     <main>
+        <section class="jumbotron">
+        </section>
         <section class="wrapper">
             <p>
-                CONTENT GOES HERE
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis accusamus delectus sit totam
+                inventore est dicta aspernatur dolores facere quisquam ea distinctio in ab, quam adipisci, iusto
+                consequatur? Maiores!
             </p>
         </section>
     </main>
@@ -18,10 +22,12 @@ export default {
 main {
     background-color: #1C1C1C;
     color: white;
-    height: 100px;
 
-    section {
-        line-height: 100px;
+    .jumbotron {
+        height: 400px;
+        background-image: url("../assets/img/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
     }
 }
 </style>
