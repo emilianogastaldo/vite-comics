@@ -5,23 +5,28 @@ export default {
         buyList: [
             {
                 text: 'digital comics',
-                imgurl: 'buy-comics-digital-comics.png'
+                img: 'buy-comics-digital-comics.png',
+                url: '#'
             },
             {
                 text: 'dc merchandise',
-                imgurl: 'buy-comics-merchandise.png'
+                img: 'buy-comics-merchandise.png',
+                url: '#'
             },
             {
                 text: 'subscription',
-                imgurl: 'buy-comics-subscriptions.png'
+                img: 'buy-comics-subscriptions.png',
+                url: '#'
             },
             {
                 text: 'comic shop locator',
-                imgurl: 'buy-comics-shop-locator.png'
+                img: 'buy-comics-shop-locator.png',
+                url: '#'
             },
             {
                 text: 'dc power visa',
-                imgurl: 'buy-dc-power-visa.svg'
+                img: 'buy-dc-power-visa.svg',
+                url: '#'
             },
         ]
     })
@@ -30,16 +35,39 @@ export default {
 
 <template>
     <section>
-        <ul class="wrapper">
+        <<<<<<< HEAD <ul class="wrapper">
 
             LISTA
-        </ul>
+            =======
+            <ul class="wrapper flex space-around">
+                <li v-for="item in buyList">
+                    <a href="#">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                        {{ item.text }}
+                    </a>
+                </li>
+                >>>>>>> AppBlueSection
+            </ul>
     </section>
 </template>
 <style lang="scss" scoped>
 section {
     background-color: #0282F9;
-    color: white;
+    <<<<<<< HEAD color: white;
     padding: 10px 0;
+    =======padding: 3rem 0;
+
+}
+
+a {
+    height: 70px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    >>>>>>>AppBlueSection
 }
 </style>

@@ -11,7 +11,7 @@ export default {
         AppHeader,
         AppMain,
         AppFooter,
-        AppBlueSection,
+        AppBlueSection
     }
 }
 </script>
