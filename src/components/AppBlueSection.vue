@@ -1,13 +1,12 @@
 <script>
+import BlueSectionLink from './blue-section-components/BlueSectionLink.vue';
 export default {
     name: 'AppBlueSection',
     props: {
-        links: Object
+        links: Array
     },
-    methods: {
-        imgUrl(subString) {
-            return new URL(`../assets/img/section_blue_icons/${subString}`, import.meta.url).href
-        }
+    components: {
+        BlueSectionLink
     }
 }
 </script>
@@ -16,20 +15,17 @@ export default {
     <section>
         <ul class="wrapper flex">
             <li v-for="link in links" :key="link.text">
-                <a href="#">
-                    <img :src="imgUrl(link.img)" alt="img">
-                    {{ link.text }}
-                </a>
+                <BlueSectionLink :icon="link" />
             </li>
         </ul>
     </section>
 </template>
+
 <style lang="scss" scoped>
 section {
     background-color: #0282F9;
     color: white;
     padding: 3rem 0;
-
 }
 
 ul {
@@ -37,22 +33,6 @@ ul {
 
     li {
         flex-basis: calc(100%/5);
-    }
-}
-
-a {
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    img {
-        display: block;
-        max-width: 50px;
-        max-height: 50px;
     }
 }
 </style>
