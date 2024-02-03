@@ -25,7 +25,7 @@ export default {
 <template>
     <AppHeader />
     <AppMain />
-    <AppBlueSection />
+    <AppBlueSection :links="blueSectionLinks" />
     <AppFooter :menus="footerMenus" :icons="footerIcons" />
 </template>
 

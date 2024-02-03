@@ -1,35 +1,9 @@
 <script>
 export default {
     name: 'AppBlueSection',
-    data: () => ({
-        buyList: [
-            {
-                text: 'digital comics',
-                img: 'buy-comics-digital-comics.png',
-                url: '#'
-            },
-            {
-                text: 'dc merchandise',
-                img: 'buy-comics-merchandise.png',
-                url: '#'
-            },
-            {
-                text: 'subscription',
-                img: 'buy-comics-subscriptions.png',
-                url: '#'
-            },
-            {
-                text: 'comic shop locator',
-                img: 'buy-comics-shop-locator.png',
-                url: '#'
-            },
-            {
-                text: 'dc power visa',
-                img: 'buy-dc-power-visa.svg',
-                url: '#'
-            },
-        ]
-    }),
+    props: {
+        links: Object
+    },
     methods: {
         imgUrl(subString) {
             return new URL(`../assets/img/section_blue_icons/${subString}`, import.meta.url).href
@@ -41,10 +15,10 @@ export default {
 <template>
     <section>
         <ul class="wrapper flex space-around">
-            <li v-for="item in buyList">
+            <li v-for="link in links" :key="link.text">
                 <a href="#">
-                    <img :src="imgUrl(item.img)" alt="img">
-                    {{ item.text }}
+                    <img :src="imgUrl(link.img)" alt="img">
+                    {{ link.text }}
                 </a>
             </li>
         </ul>
