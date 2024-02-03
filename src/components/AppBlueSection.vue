@@ -14,7 +14,7 @@ export default {
 
 <template>
     <section>
-        <ul class="wrapper flex space-around">
+        <ul class="wrapper flex">
             <li v-for="link in links" :key="link.text">
                 <a href="#">
                     <img :src="imgUrl(link.img)" alt="img">
@@ -32,6 +32,14 @@ section {
 
 }
 
+ul {
+    padding: 0 1rem;
+
+    li {
+        flex-basis: calc(100%/5);
+    }
+}
+
 a {
     font-family: "Open Sans", sans-serif;
     color: white;
@@ -42,7 +50,9 @@ a {
     gap: 1rem;
 
     img {
-        width: 50px;
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
     }
 }
 </style>
