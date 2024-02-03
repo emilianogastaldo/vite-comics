@@ -16,7 +16,7 @@ export default {
 
 <template>
     <!-- <a href="#"><img :src="this.img" alt="#"></a> -->
-    <a :href="icon.href"><img :src="this.iconPath" :alt="icon.name"></a>
+    <a :href="icon.href"><img :src="iconPath" :alt="icon.name"></a>
 </template>
 
 <style lang="scss" scoped>
