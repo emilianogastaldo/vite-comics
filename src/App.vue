@@ -4,7 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppBlueSection from './components/AppBlueSection.vue';
-import { blueSectionLinks, footerMenus, footerIcons } from './assets/data/index.js';
+import { headerLinks, blueSectionLinks, footerMenus, footerIcons } from './assets/data/index.js';
 
 export default {
     name: 'App',
@@ -17,13 +17,14 @@ export default {
     data: () => ({
         footerMenus,
         footerIcons,
-        blueSectionLinks
+        blueSectionLinks,
+        headerLinks,
     })
 }
 </script>
  
 <template>
-    <AppHeader />
+    <AppHeader :links="headerLinks" />
     <AppMain />
     <AppBlueSection :links="blueSectionLinks" />
     <AppFooter :menus="footerMenus" :icons="footerIcons" />
