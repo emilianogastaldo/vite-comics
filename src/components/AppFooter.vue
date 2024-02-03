@@ -1,13 +1,17 @@
 <script>
-import FooterMenu from './footer-components/FooterMenu.vue'
+import FooterMenu from './footer-components/FooterMenu.vue';
+import FooterIcon from './footer-components/FooterIcon.vue';
+
 export default {
     name: 'AppFooter',
     components: {
         FooterMenu,
+        FooterIcon,
     },
     props: {
         menus: Array,
-    }
+        icons: Array
+    },
 }
 </script>
 
@@ -28,11 +32,10 @@ export default {
                 <div id="footer-bottom-nav-right">
                     <ul>
                         <li><a href="#" class="follow-btn">FOLLOW US</a></li>
-                        <li><a href="#"><img src="../assets/img/footer_images/footer-facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer_images/footer-twitter.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer_images/footer-youtube.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer_images/footer-pinterest.png" alt=""></a></li>
-                        <li><a href="#"><img src="../assets/img/footer_images/footer-periscope.png" alt=""></a></li>
+                        <li v-for="(icon, i) in icons" :key="i">
+                            <FooterIcon :icon="icon" />
+                        </li>
+
                     </ul>
                 </div>
             </nav>
@@ -69,6 +72,8 @@ footer {
 #footer-bottom {
     background-color: #303030;
     padding: 2rem 0;
+
+
 }
 
 .btn-signup {
