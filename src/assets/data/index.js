@@ -2,5 +2,6 @@
 import footerMenus from './_footerMenus';
 import footerIcons from './_footerIcons';
 import blueSectionLinks from './_blueSectionLinks';
+import headerLinks from './_headerLinks';
 
-export { blueSectionLinks, footerMenus, footerIcons };
+export { headerLinks, blueSectionLinks, footerMenus, footerIcons };
