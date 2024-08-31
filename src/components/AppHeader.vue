@@ -15,7 +15,9 @@ export default {
             </figure>
             <nav>
                 <ul class="flex">
-                    <li v-for="link in links"><a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a></li>
+                    <li v-for="link in links">
+                        <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>
